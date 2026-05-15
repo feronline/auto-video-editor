@@ -1,0 +1,50 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Proje verileri (kullanıcının kişisel)
+output/
+temp/
+models/
+templates/*.mp4
+templates/*.mkv
+templates/*.mov
+
+# Medya
+*.mkv
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+
+# Loglar / geçici
+*.log
+*.tmp
+*.bak
+
+# Secrets / config
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
