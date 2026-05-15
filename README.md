@@ -7,7 +7,7 @@ Oyun kayıtlarını mikrofon sesine göre otomatik kesen, jump-cut yapan, küfü
 ## Ne yapar?
 
 - **Jump-cut**: Mikrofonun sessiz olduğu yerleri otomatik atar. Oyun sesi sessizliği etkilemez.
-- **Küfür sansürü**: Türkçe `Whisper large-v3-turbo` ile transkript çıkarır, küfür listesine giren kelimelerin üzerine bip sesi koyar. Tek kelime ve çok kelimeli öbek (örn. "amına koyim") desteklenir.
+- **Argo/küfür sansürü**: Türkçe `Whisper large-v3-turbo` ile transkripti yerelde çıkarır, kullanıcının tanımladığı kelime/öbek listesindeki ifadelerin üzerine bip sesi bindirir. Tek kelime ve çok kelimeli öbek eşleşmesi yapılır, kısmi eşleşme destekli (kök kelime varyantlarını da yakalar).
 - **Oyun sesini korur**: Mic kanalına göre keser ama çıktıda oyun sesi + senin sesin karışık durur.
 - **Parçalara böl**: Uzun kayıtları hedef dakikaya göre (örn. 15 dk) eşit parçalara ayırır.
 - **Intro/outro ekle**: Önceden hazırladığın intro/outro mp4'lerini her parçanın başına/sonuna ekler.
@@ -84,14 +84,7 @@ python run.py
 | **Uzun videoyu parçalara böl** | 15dk parçalara böler. Kısa videoda kapat | Çıktı tek video kalsın istiyorsan kapat |
 | **Hedef parça uzunluğu** | Parça başına dakika | `15 dk` YouTube için iyi |
 
-4. **Küfür sansürü** istiyorsan kutuyu işaretle, listeye her satıra bir kelime/öbek yaz:
-```
-sik
-amına koyim
-şerefsiz
-oç
-```
-Kısmi eşleşme: `sik` yazarsan "siktir", "sikim" de yakalanır.
+4. **Sansür** istiyorsan kutuyu işaretle, listeye her satıra bir kelime ya da öbek yaz (her birine bip basılır). Kısmi eşleşme yapılır, yani köke yazdığın bir kelime çekimli halleriyle de yakalanır. Çok kelimeli öbekler ardışık kelimelerde eşleştirilir.
 
 5. **Intro/Outro** seç (opsiyonel) — hazır mp4'lerini "templates" klasörüne koyabilirsin.
 
