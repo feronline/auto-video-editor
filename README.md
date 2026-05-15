@@ -1,4 +1,4 @@
-# AutoEditer
+# AutoEditor
 
 Oyun kayıtlarını mikrofon sesine göre otomatik kesen, jump-cut yapan, küfür sansürleyen ve YouTube için parçalara bölen Türkçe arayüzlü masaüstü aracı.
 
@@ -60,11 +60,11 @@ python run.py
 ```powershell
 .\build.ps1
 ```
-Çıktı: `dist\AutoEditer\AutoEditer.exe`. Klasörün tamamını istediğin yere taşıyabilirsin, sadece .exe dosyasını taşıma — yanındaki DLL'ler ona gerekli.
+Çıktı: `dist\AutoEditor\AutoEditor.exe`. Klasörün tamamını istediğin yere taşıyabilirsin, sadece .exe dosyasını taşıma — yanındaki DLL'ler ona gerekli.
 
 ## Kullanım
 
-1. **Aç**: `AutoEditer.exe` veya `python run.py`
+1. **Aç**: `AutoEditor.exe` veya `python run.py`
 2. **Video sürükle-bırak** ya da kutuya tıklayıp dosya seç (mkv/mp4)
 3. **Ayarları kontrol et**:
 

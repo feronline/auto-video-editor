@@ -1,4 +1,4 @@
-# AutoEditer .exe build script
+# AutoEditor .exe build script
 # Kullanim: .\build.ps1
 
 $ErrorActionPreference = "Stop"
@@ -12,11 +12,11 @@ pip install --upgrade pyinstaller -q
 Write-Host "[3/4] Eski build temizleniyor..." -ForegroundColor Cyan
 if (Test-Path "build")  { Remove-Item -Recurse -Force "build" }
 if (Test-Path "dist")   { Remove-Item -Recurse -Force "dist" }
-if (Test-Path "AutoEditer.spec") { Remove-Item -Force "AutoEditer.spec" }
+if (Test-Path "AutoEditor.spec") { Remove-Item -Force "AutoEditor.spec" }
 
-Write-Host "[4/4] AutoEditer.exe derleniyor (1-3 dk surebilir)..." -ForegroundColor Cyan
+Write-Host "[4/4] AutoEditor.exe derleniyor (1-3 dk surebilir)..." -ForegroundColor Cyan
 pyinstaller `
-    --name AutoEditer `
+    --name AutoEditor `
     --windowed `
     --noconfirm `
     --collect-all faster_whisper `
@@ -31,7 +31,7 @@ pyinstaller `
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
     Write-Host "BASARILI" -ForegroundColor Green
-    Write-Host "Calistirmak icin: .\dist\AutoEditer\AutoEditer.exe" -ForegroundColor Yellow
+    Write-Host "Calistirmak icin: .\dist\AutoEditor\AutoEditor.exe" -ForegroundColor Yellow
     Write-Host ""
     Write-Host "NOT: ffmpeg.exe PATH'inde olmali (zaten var)." -ForegroundColor Gray
     Write-Host "NOT: Whisper modeli ilk calistirmada models\ klasorune iner (~1.5 GB)." -ForegroundColor Gray
