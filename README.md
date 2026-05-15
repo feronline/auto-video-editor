@@ -1,8 +1,8 @@
 # AutoEditor
 
-Oyun kayıtlarını mikrofon sesine göre otomatik kesen, jump-cut yapan, küfür sansürleyen ve YouTube için parçalara bölen Türkçe arayüzlü masaüstü aracı.
+Mikrofon sesine göre otomatik jump-cut yapan, isteğe bağlı sansür uygulayan ve uzun videoyu YouTube için parçalara bölen Türkçe arayüzlü masaüstü aracı.
 
-İki saatlik bir kayıttan, sadece konuştuğun yerlerin kaldığı, 10-20 dakikalık YouTube parçaları çıkarır — sen sadece "İŞLE" butonuna basarsın.
+Uzun bir kayıttan, sadece konuştuğun yerlerin kaldığı temiz parçalar çıkarır — sen sadece "İŞLE" butonuna basarsın. Oyun kaydı, podcast, ders kaydı, tutorial; konuşma + arka plan sesi olan her şey için kullanılabilir.
 
 ## Ne yapar?
 

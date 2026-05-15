@@ -81,7 +81,7 @@ class Worker(QThread):
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("AutoEditor — Oyun videosu otomatik editör")
+        self.setWindowTitle("AutoEditor — Otomatik jump-cut editörü")
         self.resize(900, 760)
 
         self.video_path: Path | None = None
