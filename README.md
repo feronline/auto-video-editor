@@ -44,11 +44,7 @@ ffprobe -v error -select_streams a -show_entries stream=index,channels -of compa
 
 ## Kurulum
 
-### Seçenek 1 — Hazır .exe (önerilen)
-
-[Releases sayfasından](../../releases) en son `AutoEditer-windows.zip` dosyasını indir, bir klasöre çıkar, `AutoEditer.exe`'ye çift tıkla. Hepsi bu kadar.
-
-### Seçenek 2 — Kaynaktan çalıştır
+### Seçenek 1 — Kaynaktan çalıştır
 
 ```powershell
 git clone https://github.com/feronline/auto-video-editor.git
@@ -59,12 +55,12 @@ pip install -r requirements.txt
 python run.py
 ```
 
-### Seçenek 3 — Kendi .exe'ni derle
+### Seçenek 2 — Kendi .exe'ni derle
 
 ```powershell
 .\build.ps1
 ```
-Çıktı: `dist\AutoEditer\AutoEditer.exe`. Tüm klasörü taşırsan çalışır, sadece .exe dosyasını taşıma.
+Çıktı: `dist\AutoEditer\AutoEditer.exe`. Klasörün tamamını istediğin yere taşıyabilirsin, sadece .exe dosyasını taşıma — yanındaki DLL'ler ona gerekli.
 
 ## Kullanım
 
@@ -101,8 +97,6 @@ python run.py
 **Çıktıda oyun sesi yok**: "Oyun sesini çıktıda tut" tikli mi? OBS'de oyun sesini doğru track'e attın mı?
 
 **Whisper kelimeleri tutarsız yakalıyor**: Mic kalitesi düşükse kaçınılmaz. Küfür listene Whisper'ın muhtemelen üreteceği varyantları da ekle.
-
-**Bip aralıksız çalıyor**: Eski kod hatasıydı, güncel sürümde düzeldi. `git pull` yap veya en son release'i indir.
 
 ## Çıktı
 
